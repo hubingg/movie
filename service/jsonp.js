@@ -1,0 +1,1 @@
+!function(n){n.module("moviecat.jsonp",[]).service("jsonpSrv",["$window",function(n){this.jsonp=function(o,e,a){var c=[o];c.push("?");for(var i in e)c.push(i+"="+e[i]+"&");var r="myCallback"+Date.now();c.push("callback="+r);var t=n.document,l=t.createElement("script");l.src=c.join(""),t.body.appendChild(l),n[r]=function(o){a(o),t.body.removeChild(l),delete n[r]}}}])}(angular);

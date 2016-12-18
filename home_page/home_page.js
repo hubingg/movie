@@ -1,0 +1,1 @@
+!function(e){e.module("moviecat.home_page",["ngRoute"]).config(["$routeProvider",function(e){e.when("/home_page",{templateUrl:"home_page/view.html"}).when("/",{templateUrl:"home_page/view.html"})}])}(angular);
